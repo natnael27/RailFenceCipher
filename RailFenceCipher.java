@@ -81,6 +81,9 @@ public class RailFenceCipher {
         String ciphertext = railFenceEncrypt(plaintext, rails);
         System.out.println("Original Text: " + plaintext);
         System.out.println("Encrypted Text: " + ciphertext);
+
+        String decryptedText = railFenceDecrypt(ciphertext, rails);
+        System.out.println("Decrypted Text: " + decryptedText);
     }
 
 }
