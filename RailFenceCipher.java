@@ -74,5 +74,14 @@ public class RailFenceCipher {
         return decryptedText.toString();
     }
 
+    public static void main(String[] args) {
+        String plaintext = "NATNAEL";
+        int rails = 3;
 
+        String ciphertext = railFenceEncrypt(plaintext, rails);
+        System.out.println("Original Text: " + plaintext);
+        System.out.println("Encrypted Text: " + ciphertext);
+    }
+
+}
     
